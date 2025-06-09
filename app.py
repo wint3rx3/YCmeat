@@ -32,7 +32,7 @@ if "new_point" not in st.session_state:
     st.session_state.new_point = None
 
 # GeoJSON 경계 불러오기
-with open("data/GEOJSON/yeongcheon_dong_boundary.geojson", encoding="utf-8") as f:
+with open("data/행정동경계/yeongcheon_dong_boundary.geojson", encoding="utf-8") as f:
     boundary = json.load(f)
 
 # GeoDataFrame으로 경계 처리
