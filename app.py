@@ -12,7 +12,7 @@ st.title("영천시 횡단보도 추출")
 
 # 자동 불러오기: coords가 세션에 없으면 CSV에서 로드
 if "coords" not in st.session_state:
-    csv_path = "data/횡단보도_좌표.csv"
+    csv_path = "data/영천시/영천시_횡단보도_좌표.csv"
     if os.path.exists(csv_path):
         df_loaded = pd.read_csv(csv_path)
         if "위도" in df_loaded.columns and "경도" in df_loaded.columns:
